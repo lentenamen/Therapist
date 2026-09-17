@@ -1,0 +1,6 @@
+data/raw/
+.env
+__pycache__/
+*.pyc
+data/style_examples.json
+data/rejection_log.json

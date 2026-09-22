@@ -5,11 +5,20 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import config
 
-# Words that suggest YOU were venting about a rejection/setback
+# Words that suggest YOU were venting or having a hard time
 VENT_KEYWORDS = [
+    # setbacks
     "rejected", "reject", "didn't get", "didnt get", "no offer",
-    "turned down", "denied", "sucks", "gutted", "devastated",
-    "disappointed", "failed", "no response", "ghosted"
+    "turned down", "denied", "failed", "no response", "ghosted",
+    # feelings
+    "sucks", "gutted", "devastated", "disappointed", "upset",
+    "stressed", "anxious", "anxiety", "depressed", "burnt out",
+    "burned out", "overwhelmed", "exhausted", "lonely", "hurt",
+    "angry", "frustrated", "scared", "worried", "crying", "cried",
+    # phrasings
+    "i can't", "i cant", "i hate", "i'm done", "im done",
+    "worst", "terrible", "awful", "miserable", "hopeless",
+    "don't know what to do", "dont know what to do",
 ]
 
 

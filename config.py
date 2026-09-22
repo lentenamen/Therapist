@@ -1,9 +1,12 @@
 import os
 
-# Set this in your environment, or use a .env file with python-dotenv
+from dotenv import load_dotenv
+
+load_dotenv()
+
 API_KEY = os.environ.get("GROQ_API_KEY")
 MODEL = "openai/gpt-oss-120b"
-MAX_TOKENS = 500
+MAX_TOKENS = 800
 
 # Path to your unzipped Instagram export
 INSTAGRAM_INBOX_PATH = "data/raw/your_instagram_activity/messages/inbox"
@@ -13,4 +16,7 @@ INSTAGRAM_INBOX_PATH = "data/raw/your_instagram_activity/messages/inbox"
 TARGET_THREAD_KEYWORD = "username_here"
 
 STYLE_EXAMPLES_PATH = "data/style_examples.json"
-REJECTION_LOG_PATH = "data/rejection_log.json"
+HISTORY_PATH = "data/history.json"
+
+# How many past messages to carry into each request
+HISTORY_WINDOW = 40
